@@ -6,7 +6,8 @@ while True:
 	#创建一个RW实例，并绘制
 	rw = RandomWalk()
 	rw.fill_walk()
-	plt.scatter(rw.x_values,rw.y_values,c=rw.y_values,cmap=plt.cm.Reds,s=15)
+	point_number=list(range(rw.num_points))
+	plt.scatter(rw.x_values,rw.y_values,c=point_number,cmap=plt.cm.Reds,edgecolor='none',s=15)
 	plt.show()
 
 	keep_running = input('Make another walk ? (y/n): ')
