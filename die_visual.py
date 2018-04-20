@@ -11,7 +11,7 @@ for roll_num in range(3000):
 #分析结果
 frequencies=[]
 max_result=die_1.numsides+die_2.numsides
-for value in range(1,max_result):
+for value in range(2,max_result+1):
 	frequency=results.count(value)
 	frequencies.append(frequency)
 #对结果进行可视化
