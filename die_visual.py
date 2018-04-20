@@ -1,11 +1,11 @@
 import pygal
 from die import Die
-#创建2个D6
+#创建2个D8
 die_1=Die()
 die_2=Die()
 #掷几次骰子，并将结果存放在列表中
 results=[]
-# for roll_num in range(3000):
+# for roll_num in range(1000):
 # 	result = die_1.roll()+die_2.roll()
 # 	results.append(result)
 results=[die_1.roll()+die_2.roll() for roll_num in range(3000)]
@@ -20,9 +20,9 @@ nums=[num for num in range(2,max_result+1)]
 
 #对结果进行可视化
 hist = pygal.Bar()
-hist.title = 'Results of rolling one D6 1000 times.'
+hist.title = 'Results of rolling one D8 1000 times.'
 hist.x_labels = nums
 hist.x_title = 'Result'
 hist.y_title = 'Frequency of Result'
-hist.add('D6+D6',frequencies)
+hist.add('D8+D8',frequencies)
 hist.render_to_file('die_visual.svg')
