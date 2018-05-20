@@ -66,3 +66,13 @@ else:
 favorite_fruits = ['apple','bananas','pear']
 if 'bananas' in favorite_fruits:
 	print('我喜欢香蕉')
+
+
+#练习
+current_users = ['wang','zhang','li','zhao','qian','zhou',]
+new_users = ['wang','Zhang','li','wu','zheng','liu',]
+for new_user in new_users:
+	if new_user.lower() in current_users:
+		print('这名有主了，换个吧')
+	else:
+		print('这个可以有')
