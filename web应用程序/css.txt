@@ -1,0 +1,31 @@
+CSS对HTML内容进行渲染，控制多重网页的样式和布局
+CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明。
+selector {declaration1; declaration2; ... declarationN }
+选择器通常是您需要改变样式的 HTML 元素
+选择器分为 派生选择器，比如
+	li strong {
+    font-style: italic;
+    font-weight: normal;
+  } 
+
+ id选择器
+ id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式
+ #red {color:red;}
+
+ 类选择器
+ 类选择器以一个点号显示
+ .center {text-align: center}
+
+ 属性选择器
+ 可以为拥有指定属性的 HTML 元素设置样式，而不仅限于 class 和 id 属性
+ [title]
+{
+color:red;
+}
+
+CSS样式有背景、文本、字体、链接、列表、表格、轮廓
+
+CSS 框模型 (Box Model) 规定了元素框处理元素内容、内边距、边框 和 外边距 的方式。
+
+CSS 定位 (Positioning) 属性允许你对元素进行定位
+CSS 为定位和浮动提供了一些属性，利用这些属性，可以建立列式布局，将布局的一部分与另一部分重叠
